@@ -1,0 +1,109 @@
+.forms .module {
+	lost-waffle: 1/1 flex;
+	.module-content {
+		.form-column {
+			lost-flex-container: row;
+			input, .grouping-dropdown {
+				lost-column: 1/1 flex;
+			}
+			input {
+				margin-bottom: 15px;
+			}
+		}
+		form.form-inline .form-group {
+			margin-bottom: 15px;
+			display: flex;
+			.input-group {
+				flex: 1 0 auto;
+				display: flex;
+			}
+		}
+		.additional-elements {
+			lost-flex-container: row;
+			margin-bottom: 15px;
+			.additional-element {
+				margin-bottom: 12px;
+				position: relative;
+				lost-column: 1/1 flex;
+			}
+		}
+		.andesite-forget {
+			background-color: $primary04;
+			padding-left: 15px;
+			border-left: 1px solid $secondary05;
+	  	font-size: 13px;line-height: 15px;
+	  	position: absolute;
+	  	z-index: 400;
+	  	right: 15px;
+	  	top: 11px;
+	  }
+		.andesite-focused {
+		  border-color: $accent02;
+		  outline: 0;
+		  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(155, 202, 67, 1);
+		}
+		.andesite-error {
+			/* overrides bootstrap default */
+		  border-color: $limited01 !important;
+		  border-radius: 3px;
+		  outline: 0;
+		  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(239, 0, 0, 1);
+		  position: relative;
+		  z-index: 20;
+		  input.form-control {
+		  	/* overrides bootstrap default */
+		  	border-color: $limited01 !important;
+			  border-radius: 3px;
+			  outline: 0;
+			  box-shadow: none;
+		  }
+		  &.input-group {
+		  	.item-left {
+		  		/* overrides bootstrap default */
+					border-color: $limited01 !important;
+					border-right: 0;
+					border-radius: 3px 0 0 3px;
+		  	}
+		  	.item-center {
+		  		/* overrides bootstrap default */
+					border-color: $limited01 !important;
+					border-right: 0;
+		  		border-left: 0;
+		  		border-radius: 0;
+		  	}
+		  	.item-right {
+		  		/* overrides bootstrap default */
+					border-color: $limited01 !important;
+					border-left: 0;
+					border-radius: 0 3px 3px 0;
+		  	}
+		  	.btn-help {
+				  box-shadow: none;
+				}
+		  }
+		  .error-msg {
+		  	lost-flex-container: row;
+		  }
+		}
+	}
+
+	@media screen and (width >= 800px) {
+		lost-waffle: 1/2 flex;
+		.module-content {
+			.additional-elements {
+				.additional-element {
+					margin-bottom: 24px;
+					lost-column: 1/2;
+				}
+			}
+			.form-column {
+				input, .grouping-dropdown {
+					lost-column: 1/2 flex;
+				}
+				input {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

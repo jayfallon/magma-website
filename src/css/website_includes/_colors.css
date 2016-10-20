@@ -1,0 +1,42 @@
+.colors {
+	.primary-colors, .secondary-colors, .accent-colors, .limited-colors {
+		@mixin color-definitions;
+	}
+	.primary-colors {
+		.color-box {
+			size: 191px 191px;
+		}
+	}
+	.secondary-colors, .accent-colors, .limited-colors{
+		.color-box {
+			size: 135px 135px;
+		}
+	}
+	.module {
+		lost-waffle: 1/1 flex;
+	}
+}
+
+@media screen and (1024px >= width >= 600px){
+	.colors {
+		.primary-colors, .secondary-colors, .accent-colors, .limited-colors {
+			padding-bottom: 15px;
+		}
+	}
+}
+
+@media screen and (width <= 1024px) {
+	.primary-colors {
+		.color-box {
+			size: 135px 135px;
+		}
+	}
+}
+
+@media screen and (width >= 1024px) {
+	.colors {
+		.primary-colors, .secondary-colors, .accent-colors, .limited-colors {
+			padding-bottom: 30px;
+		}
+	}
+}

@@ -1,0 +1,51 @@
+.miscellaneous .module {
+	lost-waffle: 1/1 flex;
+	.module-content {
+		lost-flex-container: row;
+		img {
+			lost-waffle: 1/1 flex;
+		}
+	}
+	.module-content.world {
+		img {
+			lost-waffle: 1/1;
+		}
+	}
+}
+
+.code-block {
+	background-color: $primary03;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-left: 5px solid $secondary05;
+  color: $primary01;
+  display: block;
+  pre {
+  	padding: 0;
+    white-space: pre-wrap;
+	}
+  code {
+  	padding: 0;
+  	color: $primary01;
+  }
+}
+
+@media screen and (1024px >= width >= 600px) {
+	.miscellaneous .module {
+		.module-content {
+			img {
+				lost-waffle: 1/2 flex;
+			}
+		}
+	}
+}
+
+@media screen and (width >= 1024px) {
+	.miscellaneous .module {
+		.module-content {
+			img {
+				lost-waffle: 1/4 flex;
+			}
+		}
+	}
+}

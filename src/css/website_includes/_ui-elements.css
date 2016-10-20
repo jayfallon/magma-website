@@ -1,0 +1,93 @@
+.ui-elements .module {
+	lost-waffle: 1/1;
+
+	.module-content {
+		.user-icons-row {
+			margin-bottom: 20px;
+			lost-flex-container: row;
+			.user-icon-left, .user-icon-center, .user-icon-right {
+				font-size: 13px;
+				text-align: center;
+				lost-column: 1/3 flex;
+			}
+			.user-icon-center {
+				lost-align: center;
+				div {
+					lost-column: 1/1;
+				}
+			}
+		}
+		.bar-charts, .donut-charts, .line-charts {
+			margin-bottom: 30px;
+			lost-flex-container: row;
+		}
+		.bar-charts div, .donut-charts div {
+			lost-column: 1/3 flex;
+		}
+		.line-charts {
+			lost-column: 1/1 flex;
+			img {
+				width: 100%;
+			}
+		}
+		.left-menu, .right-menu {
+			lost-column: 1/1 flex;
+		}
+		.menu-tabs {
+			background-color: $primary04;
+			border: 1px solid $primary02;
+			border-radius: 3px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+			.menu-tab {
+				padding: 2px 12px;
+				border-right: 1px solid $primary02;
+				text-align: center;
+				flex: 1 0 auto;
+				&:last-child {
+					border-right: 0;
+				}
+				&.active {
+					background-color: $primary02;
+					color: $primary04;
+					a {
+						color: $primary04;
+					}
+				}
+				a {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (width >= 600px) {
+	.ui-elements .module {
+		.module-content {
+			.user-icons-row  {
+				.user-icon-left, .user-icon-center, .user-icon-right {
+					font-size: 15px;
+					lost-column: 1/4 flex;
+				}
+			}
+			.left-menu, .right-menu {
+				lost-column: 1/2 flex;
+			}
+		}
+	}
+}
+
+@media screen and (width >= 1024px) {
+	.ui-elements .module {
+		lost-waffle: 1/2 flex;
+		&:last-child {
+			lost-waffle: 1/1 flex;
+			.module-content {
+				lost-flex-container: row;
+			}
+		}
+	}
+}

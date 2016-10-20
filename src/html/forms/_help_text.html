@@ -1,0 +1,25 @@
+<section class="forms">
+	<div class="container">
+		<div class="section-content">
+			<div class="module">
+				<div class="module-heading">
+					<h3>Help Text</h3>
+				</div>
+				<div class="module-content">
+					@@include('code_examples/src/_help_text_example.html')
+					<div class="code-block">
+						<pre><code>@@include('code_examples/dist/_help_text_example.html')</code></pre>
+					</div>
+				</div>
+			</div>
+			<div class="module">
+				<div class="module-heading">
+					<h3>&nbsp;</h3>
+				</div>
+				<div class="module-content">
+					Help text should be explicitly associated with the form control it relates to using the <code>aria-describedby</code> attribute. This will ensure that assistive technologies – such as screen readers – will announce this help text when the user focuses or enters the control.
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

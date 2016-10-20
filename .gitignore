@@ -1,0 +1,4 @@
+node_modules
+*/[Ll]ogs/*
+bower_components
+npm_debug

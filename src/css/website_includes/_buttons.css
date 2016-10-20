@@ -1,0 +1,78 @@
+.buttons .module {
+	lost-waffle: 1/1 flex;
+	.module-content {
+		lost-flex-container: row;
+
+		.grouping-default, .grouping-success, .grouping-primary, .grouping-warning, .grouping-danger, .grouping-dropdown, .grouping-icons, .grouping-sizes, .grouping-text {
+			height: 100%;
+			lost-waffle: 1/2 flex;
+			lost-flex-container: column;
+		}
+		h4 {
+			padding: 0 0 12px 6px;
+			font-size: 16px;
+			font-weight: 400;
+		}
+		button {
+			lost-row: 1/4;
+			margin-bottom: 16px;
+		}
+		.btn-success.hover {
+		  color: $primary04;
+		  background-color: $accent03;
+		  border-color: $accent03;
+		}
+		.btn-primary.hover {
+		  color: $primary04;
+		  background-color: $secondary02;
+		  border-color: $secondary02;
+		}
+		.btn-warning.hover {
+		  color: $primary04;
+		  background-color: $accent06;
+		  border-color: $accent06;
+		}
+		.btn-danger.hover {
+		  color: $primary04;
+		  background-color: $limited02;
+		  border-color: $limited02;
+		}
+		.btn-default.hover {
+		  color: $accent01;
+		  background-color: $primary04;
+		  border-color: $secondary05;
+		}
+		.btn-disabled.btn-lg, .btn-disabled {
+			text-align: left;
+			span {
+				font-size: 13px;
+			}
+		}
+		.grouping-dropdown .btn-group{
+			width: 100%;
+		}
+		.grouping-dropdown button{
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media screen and (width >= 800px) {
+	.buttons .module {
+		.module-content {
+			.grouping-default, .grouping-success, .grouping-primary, .grouping-warning, .grouping-danger, .grouping-dropdown, .grouping-icons, .grouping-sizes, .grouping-text {
+				lost-waffle: 1/5 flex;
+			}
+		}
+	}
+}
+
+@media screen and (1024px >= width >= 600px) {
+	.buttons .module {
+		.module-content {
+			.grouping-icons button {
+				font-size: 14px;
+			}
+		}
+	}
+}

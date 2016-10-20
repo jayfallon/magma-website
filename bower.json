@@ -1,0 +1,28 @@
+{
+  "name": "andesite-digitized",
+  "version": "1.0.0",
+  "authors": [
+    "Jay Fallon <jayfallon@gmail.com>"
+  ],
+  "description": "Website for displaying Magma information",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "Magma"
+  ],
+  "license": "MIT",
+  "homepage": "magma.cengage.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4"
+  }
+}

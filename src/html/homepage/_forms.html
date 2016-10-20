@@ -1,0 +1,119 @@
+<section class="forms">
+	<div class="container">
+		<div class="section-heading">
+			<h2><span>04</span>Forms</h2>
+		</div>
+		<div class="section-content">
+			<div class="module">
+				<div class="module-heading">
+					<h3>Default</h3>
+				</div>
+				<div class="module-content">
+					@@include('../forms/code_examples/src/_medium_example.html')
+				</div>
+			</div>
+			<div class="module">
+				<div class="module-heading">
+					<h3>Focused</h3>
+				</div>
+				<div class="module-content">
+					@@include('../forms/code_examples/src/_focus_state_example.html')
+				</div>
+			</div>
+			<div class="module">
+				<div class="module-heading">
+					<h3>Error</h3>
+				</div>
+				<div class="module-content">
+					@@include('../forms/code_examples/src/_validation_state_example.html')
+				</div>
+			</div>
+			<div class="module">
+				<div class="module-heading">
+					<h3>Additional Form Elements</h3>
+				</div>
+				<div class="module-content">
+					<div class="additional-elements">
+						<div class="additional-element">
+							<form>
+								<fieldset>
+									<div class="cenform-inline">
+										<div class="text-label">Radio Label</div>
+										<label class="radio-inline">
+										  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Yes
+										</label>
+										<label class="radio-inline">
+										  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> No
+										</label>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<div class="additional-element">
+							<form>
+								<fieldset>
+									<div class="text-label">Radio Label</div>
+									<label class="checkbox-inline">
+									  <input type="checkbox" id="inlineCheckbox1" value="option1"> Opt 1
+									</label>
+									<label class="checkbox-inline">
+									  <input type="checkbox" id="inlineCheckbox2" value="option2"> Opt 2
+									</label>
+								</fieldset>
+							</form>
+						</div>
+						<div class="additional-element">
+							<form>
+								<fieldset>
+									<div class="cenform-inline has-error">
+										<div class="text-label">Radio Label Required</div>
+										<label class="radio-inline">
+										  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Yes
+										</label>
+										<label class="radio-inline">
+										  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> No
+										</label>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<div class="additional-element">
+							<form>
+								<fieldset>
+									<div class="cenform-inline has-error">
+										<div class="text-label">Checkbox Label Required</div>
+										<label class="checkbox-inline">
+										  <input type="checkbox" id="inlineCheckbox1" value="option1"> Opt 1
+										</label>
+										<label class="checkbox-inline">
+										  <input type="checkbox" id="inlineCheckbox2" value="option2"> Opt 2
+										</label>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<div class="additional-element">
+							<label class="switch-light switch-ios" style="width: 100px" onclick="">
+			          <input type="checkbox" />
+			          <span>
+			            Toggle
+			            <span>Off</span>
+			            <span>On</span>
+			          </span>
+			          <a></a>
+			        </label>
+						</div>
+					</div>
+				</div>
+				<div class="module-content">
+					<p><span class="correct">Do</span> Use informative labels &amp; placeholders illustrating the information requested.</p>
+					<p><span class="correct">Do</span> Clearly indicate where the focus is set.</p>
+					<p><span class="correct">Do</span> Give concise, informative and instant feedback when possible.</p>
+					<p><span class="incorrect">Don't</span> Show internal or un-informative error messages.</p>
+					<p><span class="incorrect">Don't</span> Wait for a submission to "soft" validate fields.</p>
+					<p><span class="incorrect">Don't</span> Require trivial or un-necessary information.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

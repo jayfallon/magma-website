@@ -1,0 +1,48 @@
+.header {
+	background-color: $primary04;
+	background: linear-gradient(to bottom,  #ffffff 96%,#e8e8e8 100%);
+	padding: 18px 0;
+	border-bottom: 1px solid #ccc;
+	h1 {
+		margin-left: 15px;
+		padding-right: 19px;
+		color: $secondary04;
+		font-family: "gnuolane",sans-serif;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 34px;
+		letter-spacing: 1px;
+		text-transform: none;
+		display: inline;
+		span {
+			color: $secondary02;
+			text-transform: uppercase;
+			letter-spacing: 0;
+		}
+	}
+}
+
+@media screen and (1024px >= width >= 600px) {
+	.header {
+		padding: 28px 0;
+		h1 {
+			background-size: 33px 47px;
+			margin-left: 60px;
+			padding-right: 28px;
+			font-size: 44px;
+		}
+	}
+}
+
+@media screen and (width >= 1024px) {
+	.header {
+		padding: 38px 0;
+		h1 {
+			background-size: 43px 62px;
+			margin-left: 114px;
+			padding-right: 38px;
+			font-size: 53px;
+		}
+	}
+}
+

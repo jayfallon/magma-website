@@ -1,0 +1,14 @@
+{
+  "cssSource": "./src/css/",
+  "cssDestination": "./dist/css/",
+  "htmlSource": "src/html/",
+  "htmlDestination": "dist/",
+  "imgSource": "src/img/",
+  "imgDestination": "dist/img/",
+  "fontsSource": "src/fonts/",
+  "fontsDestination": "dist/fonts/",
+  "jsSource": "src/js/",
+  "jsDestination": "dist/js/",
+  "codeExamplesSource": "src/html/forms/code_examples/src/",
+  "codeExamplesDestination": "src/html/forms/code_examples/dist/"
+}

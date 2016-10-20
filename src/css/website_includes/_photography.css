@@ -1,0 +1,29 @@
+.photography .module {
+	lost-waffle: 1/1 flex;
+	.module-content {
+		lost-flex-container: row;
+		img {
+			lost-waffle: 1/1 flex;
+		}
+	}
+}
+
+@media screen and (width >= 600px) {
+	.photography .module {
+		.module-content {
+			img {
+				lost-waffle: 1/2 flex;
+			}
+		}
+	}
+}
+
+@media screen and (width >= 1024px) {
+.photography .module {
+		.module-content {
+			img {
+				lost-waffle: 1/4 flex;
+			}
+		}
+	}
+}

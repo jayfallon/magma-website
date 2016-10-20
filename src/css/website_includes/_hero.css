@@ -1,0 +1,71 @@
+.hero{
+	background-color: $primary02;
+	background-image: url('../img/andesite-logo-outline.png');
+	background-size: 230px 344px;
+	background-position: 150%;
+	background-repeat: no-repeat;
+	padding: 41px 0;
+	border-top: 1px solid $primary04;
+	border-bottom: 1px solid #E7EEF1;
+	color: $primary04;
+	.module {
+		lost-column: 1/1 flex;
+	}
+	h2 {
+		@mixin simpleHeading2;
+		border-bottom: 1px solid $primary04;
+		color: $primary04;
+		span {
+			color: $primary04;
+		}
+	}
+	p {
+		margin: 5px 0 10px;
+		a {
+			color: $primary04;
+			text-decoration: underline;
+		}
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		lost-flex-container: row;
+		li {
+			list-style: none;
+			lost-waffle: 1/2 flex;
+		}
+		li:nth-child(2) {
+			text-align: right;
+		}
+	}
+}
+
+@media screen and (1024px >= width >= 600px) {
+	.hero {
+		background-size: 230px 344px;
+		background-position: 110%;
+		padding: 62px 0;
+		p {
+			margin: 10px 0 20px;
+			width: 80%;
+		}
+		ul {
+			width: 80%;
+		}
+	}
+}
+
+@media screen and (width >= 1024px) {
+	.hero {
+		background-size: 336px 488px;
+		background-position: 105%;
+		padding: 82px 0;
+		p {
+			margin: 20px 0 40px;
+			width: 40%;
+		}
+		ul {
+			width: 40%;
+		}
+	}
+}

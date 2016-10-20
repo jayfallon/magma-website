@@ -1,0 +1,35 @@
+<section class="forms">
+	<div class="container">
+		<div class="section-content">
+			<div class="module">
+				<div class="module-heading">
+					<h3>Disabled State</h3>
+				</div>
+				<div class="module-content">
+					@@include('code_examples/src/_disabled_state_example.html')
+					<div class="code-block">
+						<pre><code>@@include('code_examples/dist/_disabled_state_example.html')</code></pre>
+					</div>
+				</div>
+			</div>
+			<div class="module">
+				<div class="module-heading">
+					<h3>&nbsp;</h3>
+				</div>
+				<div class="module-content">
+					<p>
+						Add the <code>disabled</code> attribute to a <code>&lt;fieldset&gt;</code> to disable all the controls within the <code>&lt;fieldset&gt;</code> at once.
+					</p>
+					<p>
+						<h6>Caveat about link functionality of <code>&lt;a&gt;</code></h6>
+						By default, browsers will treat all native form controls (<code>&lt;input&gt;</code>, <code>&lt;select&gt;</code> and <code>&lt;button&gt;</code> elements) inside a <code>&lt;fieldset disabled&gt;</code> as disabled, preventing both keyboard and mouse interactions on them. However, if your form also includes <code>&lt;a ... class="btn btn-*"&gt;</code> elements, these will only be given a style of pointer-events: none. As noted in the section about disabled state for buttons (and specifically in the sub-section for anchor elements), this CSS property is not yet standardized and isn't fully supported in Opera 18 and below, or in Internet Explorer 11, and won't prevent keyboard users from being able to focus or activate these links. So to be safe, use custom JavaScript to disable such links.
+					</p>
+					<p>
+						<h6>Cross-browser compatibility</h6>
+						While Bootstrap will apply these styles in all browsers, Internet Explorer 11 and below don't fully support the disabled attribute on a <code>&lt;fieldset&gt;</code>. Use custom JavaScript to disable the fieldset in these browsers.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,65 @@
+body {
+	color: $primary01;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 22px;
+}
+.serif{
+	font-family: 'Cordale', serif;	
+	font-size:18px;
+	line-height: 32px;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3 {
+	font-family: "Gnuolane",sans-serif;
+}
+
+h1 {
+	font-size: 60px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 50px;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 26px;
+	font-weight: 200;
+}
+
+h5 {
+	font-size: 22px;
+	font-weight: 700;
+}
+
+h6 {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+a {
+	color: $primary02;
+}
+
+span.correct {
+	color: $accent02;
+	text-transform: uppercase;
+}
+
+span.incorrect {
+	color: $limited01;
+	text-transform: uppercase;
+}

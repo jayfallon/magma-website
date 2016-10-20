@@ -1,0 +1,1574 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Cengage Magma</title>
+    <link rel="stylesheet" href="vendor/bootstrap-4.0.0-alpha/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/toggle-switch/dist/toggle-switch.css">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="vendor/bootstrap-4.0.0-alpha/js/bootstrap.js"></script>
+    <script src="https://use.typekit.net/rwr6vzk.js"></script>
+    <script>
+      try
+      {
+        Typekit.load(
+        {
+          async: true
+        });
+      }
+      catch (e)
+      {}
+    </script>
+    <script src="vendor/toggle/toggle.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <div class="container">
+          <div class="section-heading">
+            <h1><span>Cengage Magma: Forms</span></h1> </div>
+        </div>
+      </div>
+      <div class="hero">
+        <div class="container">
+          <div class="section-heading">
+            <h2><span>04</span>Forms</h2> </div>
+          <div class="section-content">
+            <div class="module">
+              <div class="module-content">
+                <p>The goal of <strong>Magma Forms</strong> is to build a pattern library that enables everyone to easily build forms consistent with Cengage's design patterns that will work responsively across devices.</p>
+                <p>You can also view the <a href="docs/css.html#forms">Magma Framework Documentation</a> for help using Magma Forms in your project</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="website">
+      <section class="forms">
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h3>Basic Example</h3> </div>
+              <div class="module-content">
+                <form>
+                  <fieldset>
+                    <div class="cenform-group"> <label for="input-text">Enter some text</label> <input type="text" class="cenform-control" placeholder="Text Input"> </div>
+                    <div class="cenform-group"> <label for="select">Select a number</label> <select name="select" id="select-validation" class="cenform-control">
+				<option value="">Select</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select> </div>
+                    <div class="cenform-group"> <label for="textarea">Write some text</label> <textarea class="cenform-control" rows="3" placeholder="Text Area"></textarea> </div>
+                    <div class="cenform-submit align-right"> <button class="btn btn-success">Submit</button> </div>
+                  </fieldset>
+                </form>
+                <div class="code-block"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"input-text"</span>&gt;</span>Enter some text<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Input"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"select"</span>&gt;</span>Select a number<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"select"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"select-validation"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span>Select<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"1"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"2"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"3"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"4"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"5"</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"textarea"</span>&gt;</span>Write some text<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"3"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Area"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-submit align-right"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre> </div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-heading">
+                <h3>&nbsp;</h3> </div>
+              <div class="module-content">
+                <p> This example will demonstrate how to properly assemble all of the required HTML to display a form consisting of the three basic elements of an input, select and textarea, along with a submit button. </p>
+                <p> If you're familiar with how Bootstrap asembles its forms, this example should be very easy. We optionally use the <code>&lt;form&gt;</code> tag which may not necessary if you're using a JavaScript library or framework in your application
+                  but is consistent with properly formatted HTML. We also use the <code>&lt;fieldset&gt;</code> tag in order facilitate the use of assistive technology. Neither tag is associated with Magma styling and will notbe visible in the display.
+                  </p>
+                <p> Secondly, we wrap our form elements in a div or other similar tag using the <code>.cenform-group</code> class, which is very similar to the <code>.form-group</code> class you would see in Bootstrap. This will apply all of the neccessary
+                  styles to its child elements and can also be used to asign validation and visibility states. </p>
+                <p> Finally, we apply the <code>.cenform-control</code> class to our form elements in order to style them according to the Magma style guide. Again, this is very similar to the <code>.form-control</code> class you'll find in Bootstrap. </p>
+                <p> The <code>.cenform-control</code> class should be added to all input, select and textarea form elements to syle them properly. The <code>label</code> tag does not need the <code>.cenform-control</code> class as it inherits its styles from
+                  the parent <code>.cenform-group</code> element and appear hidden by default. </p>
+                <p> Our submit buttons can be configured in a variety of ways, with the default being represented by a simple button, right aligned, directly after the last form element. To achieve this result, we create a <code>.cenform-submit</code> element,
+                  designate the alignment we want with the <code>.align-right</code> class and insert the <code>button</code> markup with the appropriate classes, in this case <code>.btn</code> and <code>.btn-success</code>. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="forms">
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h3>Medium Example</h3> </div>
+              <div class="module-content">
+                <form>
+                  <fieldset>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="cenform-group"> <label for="Text-Input-Inline"></label> <input type="text" class="cenform-control" placeholder="Text Input Inline" id="Text-Input-Inline"> </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="cenform-group"> <label for="Select-Example"></label> <select class="cenform-control" name="" id="Select-Example">
+<option value="">Select</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select> </div>
+                      </div>
+                    </div>
+                    <div class="cenform-group"> <label class="sr-only" for="Text-Input-Optional">Optional Text Input</label> <input type="text" class="cenform-control" placeholder="Text Input (optional)" id="Text-Input-Optional"> </div>
+                    <div class="cenform-group"> <label class="sr-only" for="basic-addon1">Text Input with Icon</label>
+                      <div class="input-group">
+                        <div class="input-group-addon icon-form-addon"> <span class="icon icon-envelope"></span> </div> <input type="text" class="cenform-control" placeholder="Text Input with Icon" aria-describedby="basic-addon1"> </div>
+                    </div>
+                    <div class="cenform-group"> <label class="sr-only" for="Text-Input-Icon">Text Input with icon and Help Link</label>
+                      <div class="input-group forget-group">
+                        <div class="input-group-addon icon-form-addon"> <span class="icon icon-key3"></span> </div> <input type="text" class="cenform-control" id="Text-Input-Icon" placeholder="Text Input with Icon and Help Link" maxlength="17"> <a class="andesite-forget" href="#">Forget?</a> </div>
+                    </div>
+                    <div class="cenform-group"> <label for="Text-Input-Button">Button Example Right</label>
+                      <div class="input-group"> <input type="text" class="cenform-control" placeholder="Text Input with Button" id="Text-Input-Button"> <span class="input-group-btn">
+<button class="btn btn-success" type="button">Button</button>
+</span> </div>
+                    </div>
+                    <div class="cenform-group"> <label class="sr-only" for="Example-Textarea"></label> <textarea class="cenform-control" rows="3" placeholder="Text Area" id="Example-Textarea"></textarea> </div>
+                    <div class="cenform-submit align-right"> <button class="btn btn-success">Submit</button> </div>
+                  </fieldset>
+                </form>
+                <div class="code-block"> <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-md-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"Text-Input-Inline"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Input Inline"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"Text-Input-Inline"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-md-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"Select-Example"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"Select-Example"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span>Select<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"1"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"2"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"3"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"4"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"5"</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"Text-Input-Optional"</span>&gt;</span>Optional Text Input<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Input (optional)"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"Text-Input-Optional"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"basic-addon1"</span>&gt;</span>Text Input with Icon<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-addon icon-form-addon"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-envelope"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Input with Icon"</span> <span class="hljs-attribute">aria-describedby</span>=<span class="hljs-value">"basic-addon1"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"Text-Input-Icon"</span>&gt;</span>Text Input with icon and Help Link<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group forget-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-addon icon-form-addon"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-key3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"Text-Input-Icon"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Input with Icon and Help Link"</span> <span class="hljs-attribute">maxlength</span>=<span class="hljs-value">"17"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"andesite-forget"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Forget?<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"Text-Input-Button"</span>&gt;</span>Button Example Right<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Input with Button"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"Text-Input-Button"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-btn"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"Example-Textarea"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"3"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Area"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"Example-Textarea"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-submit align-right"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre> </div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-heading">
+                <h3>&nbsp;</h3> </div>
+              <div class="module-content"> This example will demonstrate how to properly assemble all of the required HTML to display a form consisting of the three basic elements of an input, select and textarea, along with a submit button. </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="forms">
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h3>Complex Example</h3> </div>
+              <div class="module-content">
+                <form>
+                  <fieldset>
+                    <div class="cenform-group"> <label for="input-text">Enter some text</label> <input type="text" class="cenform-control" placeholder="Text Input"> </div>
+                    <div class="cenform-group"> <label for="select">Select a number</label> <select name="select" id="select-validation" class="cenform-control">
+<option value="">Select</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select> </div>
+                    <div class="cenform-group"> <label for="textarea">Write some text</label> <textarea class="cenform-control" rows="3" placeholder="Text Area"></textarea> </div>
+                    <div class="cenform-submit align-right"> <button class="btn btn-success">Submit</button> </div>
+                  </fieldset>
+                </form>
+                <div class="code-block"> <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"input-text"</span>&gt;</span>Enter some text<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Input"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"select"</span>&gt;</span>Select a number<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"select"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"select-validation"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span>Select<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"1"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"2"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"3"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"4"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"5"</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"textarea"</span>&gt;</span>Write some text<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"3"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Area"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-submit align-right"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre> </div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-heading">
+                <h3>&nbsp;</h3> </div>
+              <div class="module-content"> This example will demonstrate how to properly assemble all of the required HTML to display a form consisting of the three basic elements of an input, select and textarea, along with a submit button. </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="forms">
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h3>Supported Controls</h3>
+                <p>Examples of standard form controls supported in an example form layout.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h6>Inputs</h6> </div>
+              <div class="module-content">
+                <form>
+                  <fieldset>
+                    <div class="cenform-group"> <input type="text" class="cenform-control" placeholder="Text Input Example"> </div>
+                  </fieldset>
+                </form>
+                <div class="code-block"> <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Input Example"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre> </div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-heading">
+                <h3>&nbsp;</h3> </div>
+              <div class="module-content">
+                <p> Most common form control, text-based input fields. Includes support for all HTML5 types: <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>,
+                  <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, and <code>color</code>. </p>
+                <p> Inputs will only be fully styled if their type is properly declared. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h6>Textarea</h6> </div>
+              <div class="module-content">
+                <form action="">
+                  <fieldset>
+                    <div class="cenform-group"> <textarea name="" id="" cols="30" rows="3" class="cenform-control" placeholder="Textarea Example"></textarea> </div>
+                  </fieldset>
+                </form>
+                <div class="code-block"> <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">action</span>=<span class="hljs-value">""</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">cols</span>=<span class="hljs-value">"30"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"3"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Textarea Example"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre> </div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-heading">
+                <h3>&nbsp;</h3> </div>
+              <div class="module-content">
+                <p> Form control which supports multiple lines of text. Change <code>rows</code> attribute as necessary. You must add <code>resize: none;</code> in your CSS if you do not wish the user to resize their <code>textarea</code>. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h6>Checkboxes and Radios</h6> </div>
+              <div class="module-content">
+                <form>
+                  <fieldset>
+                    <div class="checkbox"> <label>
+		    <input type="checkbox" value="">
+		    Option one is this and that&mdash;be sure to include why it's great
+		  </label> </div>
+                    <div class="checkbox disabled"> <label>
+		    <input type="checkbox" value="" disabled>
+		    Option two is disabled
+		  </label> </div>
+                    <div class="radio"> <label>
+		    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+		    Option one is this and that&mdash;be sure to include why it's great
+		  </label> </div>
+                    <div class="radio"> <label>
+		    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+		    Option two can be something else and selecting it will deselect option one
+		  </label> </div>
+                    <div class="radio disabled"> <label>
+		    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+		    Option three is disabled
+		  </label> </div>
+                  </fieldset>
+                </form>
+                <div class="code-block"> <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span> Option one is this and that&amp;mdash;be sure to include why it's great <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox disabled"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">disabled</span>&gt;</span> Option two is disabled <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"optionsRadios"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"optionsRadios1"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option1"</span> <span class="hljs-attribute">checked</span>&gt;</span> Option one is this and that&amp;mdash;be sure to include why it's great <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"optionsRadios"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"optionsRadios2"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option2"</span>&gt;</span> Option two can be something else and selecting it will deselect option one <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio disabled"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"optionsRadios"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"optionsRadios3"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option3"</span> <span class="hljs-attribute">disabled</span>&gt;</span> Option three is disabled <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre> </div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-heading">
+                <h3>&nbsp;</h3> </div>
+              <div class="module-content">
+                <p> Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many. </p>
+                <p> Disabled checkboxes and radios are supported, but to provide a "not-allowed" cursor on hover of the parent <code>&lt;label&gt;</code>, you'll need to add the .disabled class to the parent .radio, .radio-inline, .checkbox, or .checkbox-inline.
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h6>Selects</h6> </div>
+              <div class="module-content">
+                <form>
+                  <fieldset>
+                    <div class="cenform-group"> <select class="cenform-control">
+			  <option>1</option>
+			  <option>2</option>
+			  <option>3</option>
+			  <option>4</option>
+			  <option>5</option>
+			</select> </div>
+                  </fieldset>
+                </form>
+                <div class="code-block"> <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre> </div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-heading">
+                <h3>&nbsp;</h3> </div>
+              <div class="module-content">
+                <p> Note that many native select menus—namely in Safari and Chrome—have rounded corners that cannot be modified via <code>border-radius</code> properties. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-content">
+                <form>
+                  <fieldset>
+                    <div class="cenform-group"> <select multiple class="form-control">
+			  <option>1</option>
+			  <option>2</option>
+			  <option>3</option>
+			  <option>4</option>
+			  <option>5</option>
+			</select> </div>
+                  </fieldset>
+                </form>
+                <div class="code-block"> <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">multiple</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre> </div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-content">
+                <p> For <code>&lt;select&gt;</code> controls with the <code>multiple</code> attribute, multiple options are shown by default. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="forms">
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h3>Static Controls</h3> </div>
+              <div class="module-content">
+                <form>
+                  <div class="cenform-group">
+                    <div class="row"> <label class="col-sm-2 control-label">Email</label>
+                      <div class="col-sm-10">
+                        <p class="cenform-control-static">email@example.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cenform-group">
+                    <div class="row"> <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+                      <div class="col-sm-10"> <input type="password" class="cenform-control" id="inputPassword" placeholder="Password"> </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="code-block"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-2 control-label"</span>&gt;</span>Email<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-10"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control-static"</span>&gt;</span>email@example.com<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"inputPassword"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-2 control-label"</span>&gt;</span>Password<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-10"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"password"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"inputPassword"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Password"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre> </div>
+                <!-- 					<form>
+					  <div class="cenform-group">
+					    <label class="sr-only">Email</label>
+					    <p class="cenform-control-static">email@example.com</p>
+					  </div>
+					  <div class="cenform-group">
+					    <label for="inputPassword2" class="sr-only">Password</label>
+					    <input type="password" class="cenform-control" id="inputPassword2" placeholder="Password">
+					  </div>
+					  <button type="submit" class="btn btn-success">Confirm identity</button>
+					</form> -->
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-heading">
+                <h3>&nbsp;</h3> </div>
+              <div class="module-content">
+                <p> When you need to place plain text next to a form label within a form, use the <code>.cenform-control-static</code> class on a <code>&lt;p&gt;</code>. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="forms">
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h3>Input Groups</h3> </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-content">
+                <p> Extend form controls by adding text or buttons before, after, or on both sides of any text-based <code>&lt;input&gt;</code>. Use <code>.input-group</code> with an <code>.input-group-addon</code> or <code>.input-group-btn</code> to prepend
+                  or append elements to a single <code>.cenform-control</code>. </p>
+                <p> <strong>Tooltips & popovers in input groups require special setting</strong><br> When using tooltips or popovers on elements within an <code>.input-group</code>, you'll have to specify the option <code>container: 'body'</code> to avoid
+                  unwanted side effects (such as the element growing wider and/or losing its rounded corners when the tooltip or popover is triggered). </p>
+                <p> <strong>Don't mix with other components</strong><br> Do not mix form groups or grid column classes directly with input groups. Instead, nest the input group inside of the form group or grid-related element. </p>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-content">
+                <p> <strong>Always add labels</strong><br> Screen readers will have trouble with your forms if you don't include a label for every input. For these input groups, ensure that any additional label or functionality is conveyed to assistive technologies.
+                  </p>
+                <p> The exact technique to be used (visible <code>&lt;label&gt;</code> elements, <code>&lt;label&gt;</code> elements hidden using the <code>.sr-only</code> class, or use of the <code>aria-label</code>, <code>aria-labelledby</code>, <code>aria-describedby</code>,
+                  <code>title</code> or <code>placeholder</code> attribute) and what additional information will need to be conveyed will vary depending on the exact type of interface widget you're implementing. The examples in this section provide a
+                  few suggested, case-specific approaches. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h6>Basic Example</h6> </div>
+              <div class="module-content">
+                <form>
+                  <fieldset>
+                    <div class="cenform-group"> <label for="basic-addon1">Please enter your Username</label>
+                      <div class="input-group"> <span class="input-group-addon" id="basic-addon1">@</span> <input type="text" class="cenform-control" placeholder="Username" aria-describedby="basic-addon1"> </div>
+                    </div>
+                    <div class="cenform-group"> <label for="basic-addon2">Please enter your Username</label>
+                      <div class="input-group"> <input type="text" class="cenform-control" placeholder="Recipient's username" aria-describedby="basic-addon2"> <span class="input-group-addon" id="basic-addon2">@example.com</span> </div>
+                    </div>
+                    <div class="cenform-group"> <label for="basic-addon3">Please enter a $US amount</label>
+                      <div class="input-group"> <span class="input-group-addon">$</span> <input type="text" class="cenform-control" aria-label="Amount (to the nearest dollar)" id="basic-addon3"> <span class="input-group-addon">.00</span> </div>
+                    </div>
+                    <div class="cenform-group"> <label for="basic-url">Enter your vanity URL</label>
+                      <div class="input-group"> <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span> <input type="text" class="cenform-control" id="basic-url" aria-describedby="basic-addon3"> </div>
+                    </div>
+                  </fieldset>
+                </form>
+                <div class="code-block"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"basic-addon1"</span>&gt;</span>Please enter your Username<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-addon"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"basic-addon1"</span>&gt;</span>@<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Username"</span> <span class="hljs-attribute">aria-describedby</span>=<span class="hljs-value">"basic-addon1"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"basic-addon2"</span>&gt;</span>Please enter your Username<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Recipient's username"</span> <span class="hljs-attribute">aria-describedby</span>=<span class="hljs-value">"basic-addon2"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-addon"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"basic-addon2"</span>&gt;</span>@example.com<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"basic-addon3"</span>&gt;</span>Please enter a $US amount<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-addon"</span>&gt;</span>$<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"Amount (to the nearest dollar)"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"basic-addon3"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-addon"</span>&gt;</span>.00<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"basic-url"</span>&gt;</span>Enter your vanity URL<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-addon"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"basic-addon3"</span>&gt;</span>https://example.com/users/<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"basic-url"</span> <span class="hljs-attribute">aria-describedby</span>=<span class="hljs-value">"basic-addon3"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre> </div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-heading">
+                <h3>&nbsp;</h3> </div>
+              <div class="module-content">
+                <p>Place one add-on or button on either side of an input. You may also place one on both sides of an input.</p>
+                <p><strong>We do not support multiple add-ons (<code>.input-group-addon</code> or <code>.input-group-btn</code>) on a single side.</strong></p>
+                <p><strong>We do not support multiple cenform-controls in a single input group.</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h6>Sizing</h6> </div>
+              <div class="module-content">
+                <form>
+                  <fieldset>
+                    <div class="cenform-group"> <label for="sizing-addon1">Please enter your Username</label>
+                      <div class="input-group input-group-lg"> <span class="input-group-addon" id="sizing-addon1">@</span> <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1"> </div>
+                    </div>
+                    <div class="cenform-group"> <label for="sizing-addon2">Please enter your Username</label>
+                      <div class="input-group"> <span class="input-group-addon" id="sizing-addon2">@</span> <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2"> </div>
+                    </div>
+                    <div class="cenform-group"> <label for="sizing-addon3">Please enter your Username</label>
+                      <div class="input-group input-group-sm"> <span class="input-group-addon" id="sizing-addon3">@</span> <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3"> </div>
+                    </div>
+                  </fieldset>
+                </form>
+                <div class="code-block"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"sizing-addon1"</span>&gt;</span>Please enter your Username<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group input-group-lg"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-addon"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"sizing-addon1"</span>&gt;</span>@<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Username"</span> <span class="hljs-attribute">aria-describedby</span>=<span class="hljs-value">"sizing-addon1"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"sizing-addon2"</span>&gt;</span>Please enter your Username<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-addon"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"sizing-addon2"</span>&gt;</span>@<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Username"</span> <span class="hljs-attribute">aria-describedby</span>=<span class="hljs-value">"sizing-addon2"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"sizing-addon3"</span>&gt;</span>Please enter your Username<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group input-group-sm"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-addon"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"sizing-addon3"</span>&gt;</span>@<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Username"</span> <span class="hljs-attribute">aria-describedby</span>=<span class="hljs-value">"sizing-addon3"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre></div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-heading">
+                <h3>&nbsp;</h3> </div>
+              <div class="module-content">
+                <p>Add the relative form sizing classes to the <code>.input-group</code> itself and contents within will automatically resize—no need for repeating the form control size classes on each element.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h6>Checkboxes and radio addons</h6> </div>
+              <div class="module-content">
+                <form>
+                  <fieldset>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="cenform-group"> <label for="checkbox-example">Checkbox Example</label>
+                          <div class="input-group"> <span class="input-group-addon">
+			        <input type="checkbox" aria-label="...">
+			      </span> <input type="text" class="form-control" aria-label="..." id="checkbox-example"> </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="cenform-group"> <label for="radio-example">Radio Example</label>
+                          <div class="input-group"> <span class="input-group-addon">
+			        <input type="radio" aria-label="...">
+			      </span> <input type="text" class="form-control" aria-label="..." id="radio-example"> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+                <div class="code-block"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"checkbox-example"</span>&gt;</span>Checkbox Example<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-addon"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"..."</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"..."</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"checkbox-example"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"radio-example"</span>&gt;</span>Radio Example<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-addon"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"..."</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"..."</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"radio-example"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre></div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-heading">
+                <h3>&nbsp;</h3> </div>
+              <div class="module-content">
+                <p>Place any checkbox or radio option within an input group's addon instead of text.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h6>Button addons</h6> </div>
+              <div class="module-content">
+                <form>
+                  <fieldset>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="cenform-group"> <label for="button-example-left">Button Example Left</label>
+                          <div class="input-group"> <span class="input-group-btn">
+			        <button class="btn btn-success" type="button">Go!</button>
+			      </span> <input type="text" class="form-control" placeholder="Search for..." id="button-example-left"> </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="cenform-group"> <label for="button-example-right">Button Example Right</label>
+                          <div class="input-group"> <input type="text" class="form-control" placeholder="Search for..." id="button-example-right"> <span class="input-group-btn">
+			        <button class="btn btn-success" type="button">Go!</button>
+			      </span> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+                <div class="code-block"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"button-example-left"</span>&gt;</span>Button Example Left<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-btn"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span>&gt;</span>Go!<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Search for..."</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"button-example-left"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"button-example-right"</span>&gt;</span>Button Example Right<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Search for..."</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"button-example-right"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-btn"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span>&gt;</span>Go!<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre></div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-heading">
+                <h3>&nbsp;</h3> </div>
+              <div class="module-content">
+                <p>Buttons in input groups are a bit different and require one extra level of nesting. Instead of <code>.input-group-addon</code>, you'll need to use <code>.input-group-btn</code> to wrap the buttons. This is required due to default browser
+                  styles that cannot be overridden.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h6>Buttons with dropdowns</h6> </div>
+              <div class="module-content">
+                <form>
+                  <fieldset>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="cenform-group"> <label for="button-example-left">Button Example Left</label>
+                          <div class="input-group">
+                            <div class="input-group-btn"> <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                              </ul>
+                            </div>
+                            <!-- /btn-group --><input type="text" class="form-control" aria-label="..."> </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="cenform-group"> <label for="button-example-left">Button Example Right</label>
+                          <div class="input-group"> <input type="text" class="form-control" aria-label="...">
+                            <div class="input-group-btn"> <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                              </ul>
+                            </div>
+                            <!-- /btn-group -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+                <div class="code-block"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"button-example-left"</span>&gt;</span>Button Example Left<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-btn"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success dropdown-toggle"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"dropdown"</span> <span class="hljs-attribute">aria-haspopup</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">aria-expanded</span>=<span class="hljs-value">"false"</span>&gt;</span>Action
+                <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"caret"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-menu"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"separator"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-comment">&lt;!-- /btn-group --&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"..."</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"button-example-left"</span>&gt;</span>Button Example Right<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"..."</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-btn"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success dropdown-toggle"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"dropdown"</span> <span class="hljs-attribute">aria-haspopup</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">aria-expanded</span>=<span class="hljs-value">"false"</span>&gt;</span>Action
+                <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"caret"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-menu dropdown-menu-right"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"separator"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-comment">&lt;!-- /btn-group --&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre></div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-heading">
+                <h3>&nbsp;</h3> </div>
+              <div class="module-content"> </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h6>Segmented buttons</h6> </div>
+              <div class="module-content">
+                <form>
+                  <fieldset>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="cenform-group"> <label for="button-example-left">Button Example Left</label>
+                          <div class="input-group">
+                            <div class="input-group-btn"> <button type="button" class="btn btn-success">Action</button> <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                              </ul>
+                            </div>
+                            <!-- /btn-group --><input type="text" class="form-control" aria-label="..."> </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="cenform-group"> <label for="button-example-left">Button Example Right</label>
+                          <div class="input-group"> <input type="text" class="form-control" aria-label="...">
+                            <div class="input-group-btn"> <button type="button" class="btn btn-success">Action</button> <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                              <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                              </ul>
+                            </div>
+                            <!-- /btn-group -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+                <div class="code-block"><pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"button-example-left"</span>&gt;</span>Button Example Left<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-btn"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success dropdown-toggle"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"dropdown"</span> <span class="hljs-attribute">aria-haspopup</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">aria-expanded</span>=<span class="hljs-value">"false"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"caret"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-menu"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"separator"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-comment">&lt;!-- /btn-group --&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"..."</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"button-example-left"</span>&gt;</span>Button Example Right<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"..."</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-btn"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success dropdown-toggle"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"dropdown"</span> <span class="hljs-attribute">aria-haspopup</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">aria-expanded</span>=<span class="hljs-value">"false"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"caret"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-menu dropdown-menu-right"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"separator"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-comment">&lt;!-- /btn-group --&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre></div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-heading">
+                <h3>&nbsp;</h3> </div>
+              <div class="module-content"> </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h6>Multiple buttons</h6> </div>
+              <div class="module-content">
+                <form>
+                  <fieldset>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="cenform-group"> <label for="button-example-left">Button Example Left</label>
+                          <div class="input-group">
+                            <div class="input-group-btn"> <button type="button" class="btn btn-success">@</button> <button type="button" class="btn btn-success" aria-label="Bold">$</button> </div>
+                            <!-- /btn-group --><input type="text" class="form-control" aria-label="..."> </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="cenform-group"> <label for="button-example-left">Button Example Right</label>
+                          <div class="input-group"> <input type="text" class="form-control" aria-label="...">
+                            <div class="input-group-btn"> <button type="button" class="btn btn-success">@</button> <button type="button" class="btn btn-success">$</button> </div>
+                            <!-- /btn-group -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+                <div class="code-block"> <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"button-example-left"</span>&gt;</span>Button Example Left<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-btn"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success"</span>&gt;</span>@<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success"</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"Bold"</span>&gt;</span>$<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-comment">&lt;!-- /btn-group --&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"..."</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"button-example-left"</span>&gt;</span>Button Example Right<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">aria-label</span>=<span class="hljs-value">"..."</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-btn"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success"</span>&gt;</span>@<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success"</span>&gt;</span>$<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-comment">&lt;!-- /btn-group --&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre> </div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-heading">
+                <h3>&nbsp;</h3> </div>
+              <div class="module-content">
+                <p>While you can only have one add-on per side, you can have multiple buttons inside a single <code>.input-group-btn</code>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="forms">
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h3>Focus State</h3> </div>
+              <div class="module-content">
+                <form>
+                  <fieldset>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="cenform-group"> <label for="Text-Input-Inline"></label> <input type="text" class="cenform-control andesite-focused" placeholder="Text Input Inline" id="Text-Input-Inline"> </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="cenform-group"> <label for="Select-Example"></label> <select class="cenform-control andesite-focused" name="" id="Select-Example">
+<option value="">Select</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select> </div>
+                      </div>
+                    </div>
+                    <div class="cenform-group"> <label class="sr-only" for="Text-Input-Optional">Optional Text Input</label> <input type="text" class="cenform-control andesite-focused" placeholder="Text Input (optional)" id="Text-Input-Optional"> </div>
+                    <div class="cenform-group">
+                    <label class="sr-only" for="basic-addon1">Text Input with Icon</label>
+                      <div class="input-group">
+                        <div class="input-group-addon icon-form-addon"> <span class="icon icon-envelope"></span> </div> <input type="text" class="cenform-control andesite-focused" placeholder="Text Input with Icon" aria-describedby="basic-addon1"> </div>
+                    </div>
+                    <div class="cenform-group"> <label class="sr-only" for="Text-Input-Icon">Text Input with icon and Help Link</label>
+                      <div class="input-group forget-group">
+                        <div class="input-group-addon icon-form-addon"> <span class="icon icon-key3"></span> </div> <input type="text" class="cenform-control andesite-focused" id="Text-Input-Icon" placeholder="Text Input with Icon and Help Link" maxlength="17"> <a class="andesite-forget" href="#">Forget?</a>                        </div>
+                    </div>
+                    <div class="cenform-group"> <label for="Text-Input-Button">Button Example Right</label>
+                      <div class="input-group"> <input type="text" class="cenform-control andesite-focused" placeholder="Text Input with Button" id="Text-Input-Button"> <span class="input-group-btn">
+<button class="btn btn-success" type="button">Button</button>
+</span> </div>
+                    </div>
+                    <div class="cenform-group"> <label class="sr-only" for="Example-Textarea"></label> <textarea class="cenform-control andesite-focused" rows="3" placeholder="Text Area" id="Example-Textarea"></textarea> </div>
+                    <div class="cenform-submit align-right"> <button class="btn btn-success">Submit</button> </div>
+                  </fieldset>
+                </form>
+                <div class="code-block"> <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-md-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"Text-Input-Inline"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control andesite-focused"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Input Inline"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"Text-Input-Inline"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-md-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"Select-Example"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control andesite-focused"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"Select-Example"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span>Select<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"1"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"2"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"3"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"4"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"5"</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"Text-Input-Optional"</span>&gt;</span>Optional Text Input<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control andesite-focused"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Input (optional)"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"Text-Input-Optional"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"basic-addon1"</span>&gt;</span>Text Input with Icon<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-addon icon-form-addon"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-envelope"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control andesite-focused"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Input with Icon"</span> <span class="hljs-attribute">aria-describedby</span>=<span class="hljs-value">"basic-addon1"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"Text-Input-Icon"</span>&gt;</span>Text Input with icon and Help Link<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group forget-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-addon icon-form-addon"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-key3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control andesite-focused"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"Text-Input-Icon"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Input with Icon and Help Link"</span> <span class="hljs-attribute">maxlength</span>=<span class="hljs-value">"17"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"andesite-forget"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Forget?<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"Text-Input-Button"</span>&gt;</span>Button Example Right<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control andesite-focused"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Input with Button"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"Text-Input-Button"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-btn"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"Example-Textarea"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control andesite-focused"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"3"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Area"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"Example-Textarea"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-submit align-right"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre> </div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-heading">
+                <h3>&nbsp;</h3> </div>
+              <div class="module-content">
+                <p> We remove the default <code>outline</code> styles on some form controls and apply a <code>box-shadow</code> in its place for <code>:focus</code>. </p>
+                <p>
+                  <h6>Demo <code>:focus</code> state</h6> The example input uses custom styles in our documentation to demonstrate the :focus state on a .cenform-control. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="forms">
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h3>Disabled State</h3> </div>
+              <div class="module-content">
+                <form>
+                  <fieldset disabled>
+                    <div class="cenform-group"> <label for="disabledTextInput">Disabled input</label> <input type="text" id="disabledTextInput" class="cenform-control" placeholder="Disabled input"></div>
+                    <div class="cenform-group"> <label for="disabledSelect">Disabled select menu</label> <select id="disabledSelect" class="cenform-control">
+<option>Disabled select</option>
+</select> </div>
+                    <div class="checkbox"> <label>
+<input type="checkbox"> Can't check this
+</label> </div>
+                    <div class="cenform-submit align-right"> <button class="btn btn-success">Submit</button> </div>
+                  </fieldset>
+                </form>
+                <div class="code-block"> <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span> <span class="hljs-attribute">disabled</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"disabledTextInput"</span>&gt;</span>Disabled input<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"disabledTextInput"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Disabled input"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"disabledSelect"</span>&gt;</span>Disabled select menu<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"disabledSelect"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>Disabled select<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span>&gt;</span> Can't check this <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-submit align-right"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre> </div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-heading">
+                <h3>&nbsp;</h3> </div>
+              <div class="module-content">
+                <p> Add the <code>disabled</code> attribute to a <code>&lt;fieldset&gt;</code> to disable all the controls within the <code>&lt;fieldset&gt;</code> at once. </p>
+                <p>
+                  <h6>Caveat about link functionality of <code>&lt;a&gt;</code></h6> By default, browsers will treat all native form controls (<code>&lt;input&gt;</code>, <code>&lt;select&gt;</code> and <code>&lt;button&gt;</code> elements) inside a <code>&lt;fieldset disabled&gt;</code> as disabled, preventing both
+                  keyboard and mouse interactions on them. However, if your form also includes <code>&lt;a ... class="btn btn-*"&gt;</code> elements, these will only be given a style of pointer-events: none. As noted in the section about disabled state
+                  for buttons (and specifically in the sub-section for anchor elements), this CSS property is not yet standardized and isn't fully supported in Opera 18 and below, or in Internet Explorer 11, and won't prevent keyboard users from being
+                  able to focus or activate these links. So to be safe, use custom JavaScript to disable such links. </p>
+                <p>
+                  <h6>Cross-browser compatibility</h6> While Bootstrap will apply these styles in all browsers, Internet Explorer 11 and below don't fully support the disabled attribute on a <code>&lt;fieldset&gt;</code>. Use custom JavaScript to disable the fieldset in these browsers.
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="forms">
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h3>Readonly State</h3> </div>
+              <div class="module-content">
+                <form>
+                  <fieldset>
+                    <div class="cenform-group"> <input class="cenform-control" type="text" placeholder="Readonly input here…" readonly></div>
+                  </fieldset>
+                </form>
+                <div class="code-block"> <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Readonly input here…"</span> <span class="hljs-attribute">readonly</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre> </div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-heading">
+                <h3>&nbsp;</h3> </div>
+              <div class="module-content"> Add the <code>readonly</code> boolean attribute on an input to prevent modification of the input's value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor. </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="forms">
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h3>Help Text</h3> </div>
+              <div class="module-content">
+                <form>
+                  <fieldset>
+                    <div class="cenform-group"> <input type="text" class="cenform-control" placeholder="Text Input with Help Text" aria-describedby="helpBlock">
+                      <div id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</div>
+                    </div>
+                  </fieldset>
+                </form>
+                <div class="code-block"> <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Input with Help Text"</span> <span class="hljs-attribute">aria-describedby</span>=<span class="hljs-value">"helpBlock"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"helpBlock"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"help-block"</span>&gt;</span>A block of help text that breaks onto a new line and may extend beyond one line.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre> </div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-heading">
+                <h3>&nbsp;</h3> </div>
+              <div class="module-content"> Help text should be explicitly associated with the form control it relates to using the <code>aria-describedby</code> attribute. This will ensure that assistive technologies – such as screen readers – will announce this help text when the
+                user focuses or enters the control. </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="forms">
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h3>Validtion States</h3> </div>
+              <div class="module-content">
+                <form>
+                  <fieldset>
+                    <div class="row">
+                      <div class="col-md-6 col-xs-12">
+                        <div class="cenform-group has-error"> <label for="Text-Input-Inline">Text Input Required</label> <input type="text" class="cenform-control" placeholder="Text Input Inline" id="Text-Input-Inline"> </div>
+                      </div>
+                      <div class="col-md-6 col-xs-12">
+                        <div class="cenform-group has-error"> <label for="Select-Example">Selection Required</label> <select class="cenform-control" name="" id="Select-Example">
+<option value="">Select</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+</select> </div>
+                      </div>
+                    </div>
+                    <div class="cenform-group"> <label class="sr-only" for="Text-Input-Optional">Optional Text Input</label> <input type="text" class="cenform-control" placeholder="Text Input (optional)" id="Text-Input-Optional"> </div>
+                    <div class="cenform-group has-error"> <label for="basic-addon1">Text Input Required</label>
+                      <div class="input-group">
+                        <div class="input-group-addon icon-form-addon"> <span class="icon icon-envelope"></span> </div> <input type="text" class="cenform-control" placeholder="Text Input with Icon" aria-describedby="basic-addon1"> </div>
+                    </div>
+                    <div class="cenform-group has-error"> <label for="Text-Input-Icon">Text Input Required</label>
+                      <div class="input-group forget-group">
+                        <div class="input-group-addon icon-form-addon"> <span class="icon icon-key3"></span> </div> <input type="text" class="cenform-control" id="Text-Input-Icon" placeholder="Text Input with Icon and Help Link" maxlength="17"> <a class="andesite-forget" href="#">Forget?</a> </div>
+                    </div>
+                    <div class="cenform-group has-error"> <label for="Text-Input-Button">Text Input Required</label>
+                      <div class="input-group"> <input type="text" class="cenform-control" placeholder="Text Input with Button" id="Text-Input-Button"> <span class="input-group-btn">
+<button class="btn btn-success" type="button">Button</button>
+</span> </div>
+                    </div>
+                    <div class="cenform-group has-error"> <label for="Example-Textarea">Text Area Required</label> <textarea class="cenform-control" rows="3" placeholder="Text Area" id="Example-Textarea"></textarea> </div>
+                    <div class="cenform-submit align-right"> <button class="btn btn-success">Submit</button> </div>
+                  </fieldset>
+                </form>
+                <div class="code-block"> <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-md-6 col-xs-12"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group has-error"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"Text-Input-Inline"</span>&gt;</span>Text Input Required<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Input Inline"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"Text-Input-Inline"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-md-6 col-xs-12"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group has-error"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"Select-Example"</span>&gt;</span>Selection Required<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"Select-Example"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span>Select<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"1"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"2"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"3"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"4"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"5"</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"Text-Input-Optional"</span>&gt;</span>Optional Text Input<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Input (optional)"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"Text-Input-Optional"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group has-error"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"basic-addon1"</span>&gt;</span>Text Input Required<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-addon icon-form-addon"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-envelope"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Input with Icon"</span> <span class="hljs-attribute">aria-describedby</span>=<span class="hljs-value">"basic-addon1"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group has-error"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"Text-Input-Icon"</span>&gt;</span>Text Input Required<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group forget-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-addon icon-form-addon"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-key3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"Text-Input-Icon"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Input with Icon and Help Link"</span> <span class="hljs-attribute">maxlength</span>=<span class="hljs-value">"17"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"andesite-forget"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Forget?<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group has-error"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"Text-Input-Button"</span>&gt;</span>Text Input Required<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Input with Button"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"Text-Input-Button"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"input-group-btn"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group has-error"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"Example-Textarea"</span>&gt;</span>Text Area Required<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"3"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Text Area"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"Example-Textarea"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-submit align-right"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre> </div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-heading">
+                <h3>&nbsp;</h3> </div>
+              <div class="module-content"> These examples will demonstrate the proper validation state and code the code required to produce them. </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="forms">
+        <div class="container">
+          <div class="section-content">
+            <div class="module">
+              <div class="module-heading">
+                <h3>Control Sizing</h3> </div>
+              <div class="module-content">
+                <form>
+                  <fieldset>
+                    <div class="cenform-group"> <input type="text" class="cenform-control input-lg" placeholder=".input-lg"> </div>
+                    <div class="cenform-group"> <input type="text" class="cenform-control" placeholder="Default size"> </div>
+                    <div class="cenform-group"> <input type="text" class="cenform-control input-sm" placeholder=".input-sm"> </div>
+                    <div class="cenform-group"> <label for="select">Select a number</label> <select name="select" id="select-validation" class="cenform-control input-lg">
+				<option value="">Select Large</option>
+				<option value="1">1</option>
+			</select> </div>
+                    <div class="cenform-group"> <label for="select">Select a number</label> <select name="select" id="select-validation" class="cenform-control">
+				<option value="">Select Default</option>
+				<option value="1">1</option>
+			</select> </div>
+                    <div class="cenform-group"> <label for="select">Select a number</label> <select name="select" id="select-validation" class="cenform-control input-sm">
+				<option value="">Select Small</option>
+				<option value="1">1</option>
+			</select> </div>
+                    <div class="cenform-submit space-between"> <button class="btn btn-success btn-lg">Submit Large</button> <button class="btn btn-success">Submit Default</button> <button class="btn btn-success btn-sm">Submit Small</button> </div>
+                  </fieldset>
+                </form>
+                <div class="code-block"> <pre><code><span class="hljs-tag">&lt;<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control input-lg"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">".input-lg"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">"Default size"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control input-sm"</span> <span class="hljs-attribute">placeholder</span>=<span class="hljs-value">".input-sm"</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"select"</span>&gt;</span>Select a number<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"select"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"select-validation"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control input-lg"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span>Select Large<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"1"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"select"</span>&gt;</span>Select a number<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"select"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"select-validation"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span>Select Default<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"1"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-group"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"select"</span>&gt;</span>Select a number<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"select"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"select-validation"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-control input-sm"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span>Select Small<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"1"</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"cenform-submit space-between"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success btn-lg"</span>&gt;</span>Submit Large<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success"</span>&gt;</span>Submit Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-success btn-sm"</span>&gt;</span>Submit Small<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">fieldset</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></code></pre> </div>
+              </div>
+            </div>
+            <div class="module">
+              <div class="module-heading">
+                <h3>&nbsp;</h3> </div>
+              <div class="module-content"> We can set the height of our form elements by applying the <code>.input-lg</code> for larger or <code>.input-sm</code> classes for smaller elements. Accordingly, we can also adjust the size of our buttons to match the form elements. </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+
+</html>

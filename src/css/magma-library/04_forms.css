@@ -1,0 +1,426 @@
+input.form-control[type="text"] {
+  box-shadow: inset 0px 5px 5px #e6e6e6;
+  border: 1px solid $secondary05;
+  border-radius: 3px;
+  &:focus {
+  	border-color: $accent02;
+  	outline: 0;
+  	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(155, 202, 67, 1);
+  }
+}
+
+textarea.form-control {
+  box-shadow: inset 0px 5px 5px #e6e6e6;
+  border: 1px solid $secondary05;
+  border-radius: 3px;
+  resize: none;
+  &:focus {
+  	border-color: $accent02;
+  	outline: 0;
+  	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(155, 202, 67, 1);
+  }
+}
+
+select.form-control {
+  height: 34px;
+  box-shadow: inset 0px 5px 5px #e6e6e6;
+  border: 1px solid $secondary05;
+}
+
+input.form-control::placeholder, textarea.form-control::placeholder {
+  color: $primary01;
+  opacity: 0.8;
+}
+
+.form-group.has-error .form-control {
+	border-color: $limited01 !important;
+	outline: 0;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(239, 0, 0, 1);
+}
+
+.form-group-column {
+	lost-flex-container: row;
+	.input-group {
+		flex: 1 0 auto;
+	}
+}
+
+.icon-form-addon {
+	padding-top: 9px;
+}
+
+.input-group {
+	button {
+    height: 35px;
+		border-radius: 0 3px 3px 0;
+	}
+}
+
+.forget-group {
+	input {
+		/* overrides default bootstrap input-group right border radius settings */
+		border-radius: 0 3px 3px 0 !important;
+	}
+}
+
+/* remove padding for large input group addon*/
+.input-group-lg .input-group-addon {
+  padding: 0 1.25rem;
+}
+
+/*Form groups*/
+
+/*Designed to help with the organization and spacing of vertical forms. For
+horizontal forms, use the predefined grid classes.*/
+
+.cenform-submit {
+  margin-bottom: 20px;
+  box: vertical;
+  &.align-left {
+    box: vertical top left;
+    button {
+      margin-bottom: 8px;
+    }
+  }
+  &.align-center {
+    box: vertical top center;
+    button {
+      margin-bottom: 8px;
+    }
+  }
+  &.align-right {
+    box: vertical top right;
+    button {
+      margin-bottom: 8px;
+    }
+  }
+  &.space-between {
+    box: vertical left space-between;
+    button {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.cenform-group {
+  margin-bottom: 20px;
+
+  .btn-file {
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-file input[type=file] {
+      position: absolute;
+      top: 0;
+      right: 0;
+      min-width: 100%;
+      min-height: 100%;
+      font-size: 100px;
+      text-align: right;
+      filter: alpha(opacity=0);
+      opacity: 0;
+      outline: none;
+      background: white;
+      cursor: inherit;
+      display: block;
+  }
+
+  .help-block {
+    padding: 10px 10px 0;
+    color: $secondary04;
+    font-size: 14px;
+  }
+
+  label {
+    display: none;
+  }
+
+  label.control-label {
+    padding-top: 8px;
+    display: inline;
+  }
+
+  select[multiple], select[size] {
+    height: auto;
+  }
+
+  &.has-error {
+    label {
+      background: $limited02;
+      margin: 0;
+      text-align: right;
+      font-size: 12px;
+      padding: 2px 5px;
+      display: block;
+      text-shadow: 0 -1px 0 #ff0000;
+      border-radius: 3px 3px 0 0;
+      color: $primary04;
+      position: relative;
+      &:after {
+        border-color: $limited02 rgba(#000, 0);
+        border-style: solid;
+        border-width: 7px 7px 0;
+        bottom: -7px;
+        content: "";
+        display: block;
+        right: 20px;
+        position: absolute;
+        z-index: 400;
+      }
+    }
+
+    .input-group {
+      input {
+        border-radius: 0 0 0 3px;
+      }
+    }
+
+    .input-group-addon {
+      background-color: #eceeef;
+      border-color: $limited02;
+      color: $secondary04;
+      &:first-child {
+        border-radius: 0 0 0 3px;
+      }
+      &:nth-child(3) {
+        border-radius: 0 0 3px 0;
+      }
+    }
+
+    .cenform-control {
+      border: 1px solid $limited02;
+      border-radius: 0 0 3px 3px;
+      &:focus {
+        border-color: $limited01;
+        outline: 0;
+        box-shadow: 0 0 5px rgba($limited01, 1);
+        z-index: 300;
+        &::placeholder {
+          color: $secondary05;
+        }
+      }
+    }
+  }
+}
+
+.cenform-inline {
+  &.has-error {
+    .text-label {
+      background: $limited02;
+      margin: 0 0 12px;
+      text-align: right;
+      font-size: 12px;
+      padding: 2px 5px;
+      display: block;
+      text-shadow: 0 -1px 0 #ff0000;
+      border-radius: 3px;
+      color: $primary04;
+      position: relative;
+      &:after {
+        border-color: $limited02 rgba(#000, 0);
+        border-style: solid;
+        border-width: 7px 7px 0;
+        bottom: -7px;
+        content: "";
+        display: block;
+        right: 20px;
+        position: absolute;
+        z-index: 400;
+      }
+    }
+    label {
+      color: $primary01;
+    }
+    input {
+      border: 1px solid $limited01;
+      box-shadow: 0 0 9px rgba($limited01, 1);
+      &[type="radio"] {
+        border-radius: 50%;
+      }
+      &[type="checkbox"] {
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+.cenform-control {
+  display: block;
+  width: 100%;
+  height: 35px; /*Make inputs at least the height of their button counterpart (base line-height + padding + border)*/
+  padding: 11px 8px;
+  font-size: 16px;
+  line-height: 20px;
+  color: @primary01;
+  background-color: $primary04;
+  background-image: none; /*Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214*/
+  border: 1px solid $secondary05;
+  border-radius: 3px; /*Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.*/
+  box-shadow: inset 0px 4px 5px #e6e6e6;
+  /*.transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");*/
+
+  &.input-lg {
+    padding: 10px 16px;
+    height: 46px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  &.input-sm {
+    padding: 5px 10px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  /*Customize the `:focus` state to imitate native WebKit styles.*/
+  /*.form-control-focus();*/
+
+  &:focus {
+    border-color: $accent02;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(155, 202, 67, 1);
+    &::placeholder {
+      color: $secondary05;
+    }
+  }
+
+  /*Placeholder*/
+  /*.placeholder();*/
+  &::placeholder {
+    color: $primary01;
+  }
+
+  /*Unstyle the caret on `<select>`s in IE10+.*/
+  &::-ms-expand {
+    border: 0;
+    background-color: transparent;
+  }
+
+  /*Disabled and read-only inputs*/
+  
+  /*HTML5 says that controls under a fieldset > legend:first-child won't be*/
+  /*disabled if the fieldset is disabled. Due to implementation difficulty, we*/
+  /*don't honor that edge case; we style them as disabled anyway.*/
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    background-color: $primary03;
+    opacity: 1; /*iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655*/
+    &::placeholder {
+      color: $secondary04;
+    }
+  }
+
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+  }
+
+  /*Reset height for `textarea`s*/
+  textarea& {
+    height: auto;
+  }
+}
+
+/*Inline forms*/
+/**/
+/*Make forms appear inline(-block) by adding the `.form-inline` class. Inline*/
+/*forms begin stacked on extra small (mobile) devices and then go inline when*/
+/*viewports reach <768px.*/
+/**/
+/*Requires wrapping inputs and labels with `.form-group` for proper display of*/
+/*default HTML form controls and our custom form controls (e.g., input groups).*/
+/**/
+/*Heads up! This is mixin-ed into `.navbar-form` in navbars.less.*/
+
+.form-inline {
+
+  /*Kick in the inline*/
+  @media (min-width: @screen-sm-min) {
+   
+    .cenform-group {
+      box: horizontal;
+    }
+
+    /*In navbar-form, allow folks to *not* use `.form-group`*/
+    .cenform-control {
+      
+    }
+
+    /*Make static controls behave like regular ones*/
+    .cenform-control-static {
+      
+    }
+
+    .input-group {
+      display: inline-table;
+      vertical-align: middle;
+
+      .input-group-addon,
+      .input-group-btn,
+      .form-control {
+        width: auto;
+      }
+    }
+
+    /*Input groups need that 100% width though*/
+    .input-group > .form-control {
+      width: 100%;
+    }
+
+    .control-label {
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+
+    /*Remove default margin on radios/checkboxes that were used for stacking, and*/
+    /*then undo the floating of radios and checkboxes to match.*/
+    .radio,
+    .checkbox {
+      display: inline-block;
+      margin-top: 0;
+      margin-bottom: 0;
+      vertical-align: middle;
+
+      label {
+        padding-left: 0;
+      }
+    }
+    .radio input[type="radio"],
+    .checkbox input[type="checkbox"] {
+      position: relative;
+      margin-left: 0;
+    }
+
+    /*Re-override the feedback icon.*/
+    .has-feedback .form-control-feedback {
+      top: 0;
+    }
+  }
+}
+
+@media screen and (width >= 800px) {
+  .cenform-submit {
+    margin-bottom: 20px;
+    box: horizontal;
+    &.align-left {
+      box: horizontal top left;
+      button {
+        margin-right: 8px;
+      }
+    }
+    &.align-center {
+      box: horizontal top center;
+    }
+    &.align-right {
+      box: horizontal top right;
+      button {
+        margin-left: 8px;
+      }
+    }
+    &.space-between {
+      box: horizontal left space-between;
+    }
+  }
+}

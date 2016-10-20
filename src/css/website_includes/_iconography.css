@@ -1,0 +1,61 @@
+.iconography .module {
+	lost-waffle: 1/1 flex;
+	.module-content {
+		lost-flex-container: row;
+		ul {
+			lost-waffle: 1/2 flex;
+      li {
+      	text-align: center;
+      	&:first-child {
+      		padding-bottom: 12px;
+      	}
+      }
+		}
+    .wrapper-for-icon{
+      background-color: $limited03;
+      margin-bottom: 3px;
+      padding: 8px;
+      border-radius: 3px;
+      text-align: center;
+      word-wrap: break-word;
+      lost-column: 1/3 3 3px flex;
+      .icon {
+        font-size: 200%;
+      }
+      .text {
+        padding-top: 12px;
+        font-size: 90%;
+      }
+      &:hover {
+        background-color: $accent05;
+        color: $primary04;
+      }
+    }
+	}
+}
+
+@media screen and (1024px >= width >= 600px) {
+  .iconography .module {
+    .module-content {
+      ul {
+        lost-waffle: 1/3;
+      }
+      .wrapper-for-icon {
+        lost-column: 1/4 4 3px flex;
+      }
+    }
+  }
+}
+
+@media screen and (width >= 1024px) {
+  .iconography .module {
+    .module-content {
+      ul {
+        lost-waffle: 1/5;
+      }
+      .wrapper-for-icon {
+        lost-column: 1/6 6 3px flex;
+      }
+    }
+  }
+}

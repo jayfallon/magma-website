@@ -1,0 +1,87 @@
+@define-mixin simpleHeading2 {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid $limited03;
+	font-size: 30px;
+	text-transform: none;
+	span{
+		margin-right: 6px;
+		color: $secondary04;
+		font-size: 16px;
+	}
+}
+
+@define-mixin color-definitions {
+	lost-flex-container: row;
+	li {
+		background-color: $primary04;
+		padding: 0 0 0 16px;
+		color: $secondary03;
+		font-size: 13px;
+	}
+	li:nth-child(1) {
+		padding: 0 0 10px 0;
+	}
+	li:nth-last-child(1) {
+		padding-bottom: 10px;
+		font-size: 12px;
+	}
+}
+
+@define-mixin incorrect-headings {
+	h1 {
+		color: $accent05;
+	}
+	h2 {
+		color: $accent04;
+	}
+	h3 {
+		color: $accent03;
+	}
+	h4 {
+		color: $secondary06;
+	}
+	h5, h6 {
+		color: $secondary05;
+	}
+}
+
+@define-mixin span-correct {
+	color: $accent02;
+	text-transform: uppercase;
+}
+
+@define-mixin span-incorrect {
+	color: $limited01;
+	text-transform: uppercase;
+}
+
+@define-mixin content-split {
+	lost-flex-container: row;
+	.content-left, .content-right {
+		lost-column: 1/2;
+	}
+}
+
+@define-mixin typography-examples {
+	@media screen and (1024px >= width >= 600px) {
+		h1 {
+			font-size: 32px;
+		}
+		h2 {
+			font-size: 25.6px;
+		}
+		h3 {
+			font-size: 19px;
+		}
+		h4 {
+			font-size: 16.6px;
+		}
+		h5 {
+			font-size: 14px;
+		}
+		h6 {
+			font-size: 12px;
+		}
+	}
+}

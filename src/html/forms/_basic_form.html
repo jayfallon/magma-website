@@ -1,0 +1,41 @@
+<section class="forms">
+	<div class="container">
+		<div class="section-content">
+			<div class="module">
+				<div class="module-heading">
+					<h3>Basic Example</h3>
+				</div>
+				<div class="module-content">
+					@@include('code_examples/src/_basic_example.html')
+					<div class="code-block"><pre><code>@@include('code_examples/dist/_basic_example.html')</code></pre>
+					</div>
+				</div>
+			</div>
+			<div class="module">
+				<div class="module-heading">
+					<h3>&nbsp;</h3>
+				</div>
+				<div class="module-content">
+					<p>
+						This example will demonstrate how to properly assemble all of the required HTML to display a form consisting of the three basic elements of an input, select and textarea, along with a submit button.
+					</p>
+					<p>
+						If you're familiar with how Bootstrap asembles its forms, this example should be very easy. We optionally use the <code>&lt;form&gt;</code> tag which may not necessary if you're using a JavaScript library or framework in your application but is consistent with properly formatted HTML. We also use the <code>&lt;fieldset&gt;</code> tag in order facilitate the use of assistive technology. Neither tag is associated with Magma styling and will notbe visible in the display.
+					</p>
+					<p>
+						Secondly, we wrap our form elements in a div or other similar tag using the <code>.cenform-group</code> class, which is very similar to the <code>.form-group</code> class you would see in Bootstrap. This will apply all of the neccessary styles to its child elements and can also be used to asign validation and visibility states.
+					</p>
+					<p>
+						Finally, we apply the <code>.cenform-control</code> class to our form elements in order to style them according to the Magma style guide. Again, this is very similar to the <code>.form-control</code> class you'll find in Bootstrap.
+					</p>
+					<p>
+						The <code>.cenform-control</code> class should be added to all input, select and textarea form elements to syle them properly. The <code>label</code> tag does not need the <code>.cenform-control</code> class as it inherits its styles from the parent <code>.cenform-group</code> element and appear hidden by default.
+					</p>
+					<p>
+						Our submit buttons can be configured in a variety of ways, with the default being represented by a simple button, right aligned, directly after the last form element. To achieve this result, we create a <code>.cenform-submit</code> element, designate the alignment we want with the <code>.align-right</code> class and insert the <code>button</code> markup with the appropriate classes, in this case <code>.btn</code> and <code>.btn-success</code>.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
